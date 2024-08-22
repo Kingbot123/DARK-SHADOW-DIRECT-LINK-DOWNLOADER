@@ -8,7 +8,7 @@ const { cmd , commands } = require('../command')
 const { getBuffer , getGroupAdmins, getRandom, h2k, isUrl,Json,runtime,sleep,fetchJson} = require('../lib/functions')
 cmd({
         pattern: "alive",
-        react: "💫",
+        react: "🌹",
         alias: ["online", "test", "bot"],
         desc: "Check bot online or no.",
         category: "main",
@@ -30,15 +30,15 @@ cmd({
 		    let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
+                        display_text: "𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗨𝗦",
+                        url: "https://wa.me/94740952096",
+                        merchant_url: "https://wa.me/94740952096"
                     }),
                 },
                 {
                     name: "quick_reply",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "ALL MENU",
+                        display_text: "𝗔𝗟𝗟 𝗠𝗘𝗡𝗨",
                         id: prefix + "menu"
                     }),
                 },
@@ -52,42 +52,44 @@ cmd({
             ]
             let opts = {
                 image: logoimage,
-                header: '𝙲𝚈𝙱𝙴𝚁-𝚇 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝚄𝚂𝙴𝚁 𝙱𝙾𝚃',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                header: '𝗗𝗔𝗥𝗞 𝗦𝗛𝗔𝗗𝗢𝗪 𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 𝗨𝗦𝗘𝗥 𝗕𝗢𝗧',
+                footer: '> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋꜱʜᴀᴅᴏᴡxᴛᴇᴀᴍ',
                 body: data
 
             }
             return await conn.sendButtonMessage(from, buttons, m, opts)
         } catch (e) {
-            const datada = await fetchJson("https://raw.githubusercontent.com/darkalphaxteam/UPLOADS/main/JSON/info.json")
+            const datada = await fetchJson("https://raw.githubusercontent.com/SadeepaChamudith2006/UPLOAD/main/JSON/info.json")
             let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
+                        display_text: "𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗨𝗦",
+                        url: "https://wa.me/94740952096",
+                        merchant_url: "https://wa.me/94740952096"
                     }),
                 },
                 {
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "FOLLOW US",
-                        url: "https://github.com/darkalphaxteam",
-                        merchant_url: "https://github.com/darkalphaxteam"
+                        display_text: "𝗙𝗢𝗟𝗟𝗢𝗪 𝗨𝗦",
+                        url: "https://github.com/SadeepaChamudith2006",
+                        merchant_url: "https://github.com/SadeepaChamudith2006"
                     }),
                 },
                 {
                     name: "quick_reply",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "ALL MENU",
+                        display_text: "𝗔𝗟𝗟 𝗠𝗘𝗡𝗨",
                         id: prefix + "menu"
                     }),
                 }
             ]
+
+            //Alive iMAGE
             let opts = {
-                image: 'https://telegra.ph/file/4c009990c1eb47c8b1d84.jpg',
-                header: '𝙲𝚈𝙱𝙴𝚁-𝚇 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝚄𝚂𝙴𝚁 𝙱𝙾𝚃',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                image: 'https://i.ibb.co/TMM8yns/20240819-150339.jpg',
+                header: '𝗗𝗔𝗥𝗞 𝗦𝗛𝗔𝗗𝗢𝗪 𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 𝗨𝗦𝗘𝗥 𝗕𝗢𝗧',
+                footer: '> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋꜱʜᴀᴅᴏᴡxᴛᴇᴀᴍ',
                 body: datada.text
 
             }
@@ -191,8 +193,8 @@ id: prefix +  `setimg SYSTEM_IMAGE=${imgURL}`
 	   let opts = {
                 image: imgURL,
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
-                body: '🧑‍🔧 *Cyber-X Images Update Tool* ⚙️'
+                footer: '> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋꜱʜᴀᴅᴏᴡxᴛᴇᴀᴍ',
+                body: '🧑‍🔧 *Dark Shadow Images Update Tool* ⚙️'
 
             }
 
@@ -251,10 +253,10 @@ id: prefix +  `setimg OWNER_NUMBER=${m.quoted.msg}`
 })
 }]
 	   let opts = {
-                image: '',
+                image: 'https://i.ibb.co/TMM8yns/20240819-150339.jpg',
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
-                body: '🧑‍🔧 *Cyber-X Messages Update Tool* ⚙️'
+                footer: '> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋꜱʜᴀᴅᴏᴡxᴛᴇᴀᴍ',
+                body: '🧑‍🔧 *Dark Shadow Messages Update Tool* ⚙️'
 
             }
 
@@ -290,125 +292,21 @@ const ccp = await si.cpu()
 const cinfo = await si.version()
 let timee = await si.time()
 const plat = os.hostname()
-let data = await fetchJson('https://raw.githubusercontent.com/darkalphaxteam/CYBER-X-WHATSAPP-BOT/main/package.json')
+let data = await fetchJson('https://raw.githubusercontent.com/SadeepaChamudith2006/UPLOAD/main/package.json')
  const db_pool = new DBM({
     db: config.DATABASE_URL
 })
 		const sysimg = await db_pool.get('SYSTEM_IMAGE')
 		if ( ccp.brand.includes('Skylake') ) {
-const infomsg = `🖥️  *CYBER-X 3.0 SYSTEM INFORMATIONS*  🖥️
+const infomsg = `🖥️ *SYSTEM INFORMATIONS* 🖥️
 
-🤖  *_Bot's System informations_*
 
-1.  _Runtime -: ${runtime(process.uptime())}_
-2.  _Ram Usage -: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB_
-3.  _Bot Version -: 3.0.0 Beta Version_
-
-📶  *_Server System informations_*
-
-1.  _Platform : Scalingo_
-2.  _Running OS : ${os.platform()}_
-3.  _CPU Manufacture  -: ${ccp.manufacturer}_
-4.  _CPU Brand -: ${ccp.brand}_
-5.  _CPU Speed -: ${ccp.speed}_
-
-⚙️  *_System Data Collector Engine_*
-
-1. _Engine Version -: ${cinfo}_
-
-💻  *_Running Server's information_*
-
-1. _Server Time Zone -: ${timee.timezone}_
-2. _Time Zone Name -: ${timee.timezoneName}_`
-let buttons = [{
-                    name: "cta_url",
-                    buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
-                    }),
-                },
-                {
-                    name: "cta_url",
-                    buttonParamsJson: JSON.stringify({
-                        display_text: "FOLLOW US",
-                        url: "https://github.com/darkalphaxteam",
-                        merchant_url: "https://github.com/darkalphaxteam"
-                    }),
-                }
-             
-            ]
-            let opts = {
-                image: sysimg,
-                header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
-                body: infomsg
-
-            }
-            return await conn.sendButtonMessage(from, buttons, m, opts)
-}
-
-if ( plat.length > 15 ) {
-const infomsg = `🖥️  *CYBER-X 3.0 SYSTEM INFORMATIONS*  🖥️
-
-🤖  *_Bot's System informations_*
+🤖  *_Bot System informations_*
 
 1.  _Runtime -: ${runtime(process.uptime())}_
 2.  _Ram Usage -: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB_
 3.  _Bot Version -: 3.0.0 Beta Version_
 
-📶  *_Server System informations_*
-
-1.  _Platform : Heroku_
-2.  _Running OS : ${os.platform()}_
-3.  _CPU Manufacture  -: ${ccp.manufacturer}_
-4.  _CPU Brand -: ${ccp.brand}_
-5.  _CPU Speed -: ${ccp.speed}_
-
-⚙️  *_System Data Collector Engine_*
-
-1. _Engine Version -: ${cinfo}_
-
-💻  *_Running Server's information_*
-
-1. _Server Time Zone -: ${timee.timezone}_
-2. _Time Zone Name -: ${timee.timezoneName}_`
-let buttons = [{
-                    name: "cta_url",
-                    buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
-                    }),
-                },
-                {
-                    name: "cta_url",
-                    buttonParamsJson: JSON.stringify({
-                        display_text: "FOLLOW US",
-                        url: "https://github.com/darkalphaxteam",
-                        merchant_url: "https://github.com/darkalphaxteam"
-                    }),
-                }
-             
-            ]
-            let opts = {
-                image: sysimg,
-                header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
-                body: infomsg
-
-            }
-            return await conn.sendButtonMessage(from, buttons, m, opts)
-}
-
-
-const infomsg = `🖥️  *CYBER-X 3.0 SYSTEM INFORMATIONS*  🖥️
-
-🤖  *_Bot's System informations_*
-
-1.  _Runtime -: ${runtime(process.uptime())}_
-2.  _Ram Usage -: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB_
-3.  _Bot Version -: 3.0.0 Beta Version_
 
 📶  *_Server System informations_*
 
@@ -418,28 +316,23 @@ const infomsg = `🖥️  *CYBER-X 3.0 SYSTEM INFORMATIONS*  🖥️
 4.  _CPU Brand -: ${ccp.brand}_
 5.  _CPU Speed -: ${ccp.speed}_
 
-⚙️  *_System Data Collector Engine_*
 
-1. _Engine Version -: ${cinfo}_
-
-💻  *_Running Server's information_*
-
-1. _Server Time Zone -: ${timee.timezone}_
-2. _Time Zone Name -: ${timee.timezoneName}_`
- let buttons = [{
+> ᴘᴏᴡᴇʀᴅ ʙʏ ᴅᴀʀᴋꜱʜᴀᴅᴏᴡ ᴍᴅ
+\n> *ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ* \n\n> *ʙᴜᴛ ᴀʟʟ ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ* 🧑🏻‍💻`
+let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
+                        display_text: "𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗨𝗦",
+                        url: "https://wa.me/94740952096",
+                        merchant_url: "https://wa.me/94740952096"
                     }),
                 },
                 {
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "FOLLOW US",
-                        url: "https://github.com/darkalphaxteam",
-                        merchant_url: "https://github.com/darkalphaxteam"
+                        display_text: "𝗙𝗢𝗟𝗟𝗢𝗪 𝗨𝗦",
+                        url: "https://github.com/SadeepaChamudith2006",
+                        merchant_url: "https://github.com/SadeepaChamudith2006"
                     }),
                 }
              
@@ -447,7 +340,107 @@ const infomsg = `🖥️  *CYBER-X 3.0 SYSTEM INFORMATIONS*  🖥️
             let opts = {
                 image: sysimg,
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                footer: '> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋꜱʜᴀᴅᴏᴡxᴛᴇᴀᴍ',
+                body: infomsg
+
+            }
+            return await conn.sendButtonMessage(from, buttons, m, opts)
+}
+
+if ( plat.length > 15 ) {
+const infomsg = `🖥️ SYSTEM INFORMATIONS* 🖥️
+
+
+🤖  *_Bot System informations_*
+
+1.  _Runtime -: ${runtime(process.uptime())}_
+2.  _Ram Usage -: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB_
+3.  _Bot Version -: 3.0.0 Beta Version_
+
+
+📶  *_Server System informations_*
+
+1.  _Platform : ${plat}_
+2.  _Running OS : ${os.platform()}_
+3.  _CPU Manufacture  -: ${ccp.manufacturer}_
+4.  _CPU Brand -: ${ccp.brand}_
+5.  _CPU Speed -: ${ccp.speed}_
+
+
+> ᴘᴏᴡᴇʀᴅ ʙʏ ᴅᴀʀᴋꜱʜᴀᴅᴏᴡ ᴍᴅ
+\n> *ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ* \n\n> *ʙᴜᴛ ᴀʟʟ ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ* 🧑🏻‍💻`
+let buttons = [{
+                    name: "cta_url",
+                    buttonParamsJson: JSON.stringify({
+                        display_text: "𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗨𝗦",
+                        url: "https://wa.me/94740952096",
+                        merchant_url: "https://wa.me/94740952096"
+                    }),
+                },
+                {
+                    name: "cta_url",
+                    buttonParamsJson: JSON.stringify({
+                        display_text: "𝗙𝗢𝗟𝗟𝗢𝗪 𝗨𝗦",
+                        url: "https://github.com/SadeepaChamudith2006",
+                        merchant_url: "https://github.com/SadeepaChamudith2006"
+                    }),
+                }
+             
+            ]
+            let opts = {
+                image: sysimg,
+                header: '',
+                footer: '> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋꜱʜᴀᴅᴏᴡxᴛᴇᴀᴍ',
+                body: infomsg
+
+            }
+            return await conn.sendButtonMessage(from, buttons, m, opts)
+}
+
+
+const infomsg = `🖥️ SYSTEM INFORMATIONS* 🖥️
+
+
+🤖  *_Bot System informations_*
+
+1.  _Runtime -: ${runtime(process.uptime())}_
+2.  _Ram Usage -: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB_
+3.  _Bot Version -: 3.0.0 Beta Version_
+
+
+📶  *_Server System informations_*
+
+1.  _Platform : ${plat}_
+2.  _Running OS : ${os.platform()}_
+3.  _CPU Manufacture  -: ${ccp.manufacturer}_
+4.  _CPU Brand -: ${ccp.brand}_
+5.  _CPU Speed -: ${ccp.speed}_
+
+
+> ᴘᴏᴡᴇʀᴅ ʙʏ ᴅᴀʀᴋꜱʜᴀᴅᴏᴡ ᴍᴅ
+\n> *ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ* \n\n> *ʙᴜᴛ ᴀʟʟ ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ* 🧑🏻‍💻`
+ let buttons = [{
+                    name: "cta_url",
+                    buttonParamsJson: JSON.stringify({
+                        display_text: "𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗨𝗦",
+                        url: "https://wa.me/94740952096",
+                        merchant_url: "https://wa.me/94740952096"
+                    }),
+                },
+                {
+                    name: "cta_url",
+                    buttonParamsJson: JSON.stringify({
+                        display_text: "𝗙𝗢𝗟𝗟𝗢𝗪 𝗨𝗦",
+                        url: "https://github.com/SadeepaChamudith2006",
+                        merchant_url: "https://github.com/SadeepaChamudith2006"
+                    }),
+                }
+             
+            ]
+            let opts = {
+                image: sysimg,
+                header: '',
+                footer: '> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋꜱʜᴀᴅᴏᴡxᴛᴇᴀᴍ',
                 body: infomsg
 
             }
@@ -458,45 +451,18 @@ const ccp = await si.cpu()
 const cinfo = await si.version()
 let timee = await si.time()
 const plat = os.hostname()
-let data = await fetchJson('https://raw.githubusercontent.com/darkalphaxteam/CYBER-X-WHATSAPP-BOT/main/package.json')
+let data = await fetchJson('https://raw.githubusercontent.com/SadeepaChamudith2006/UPLOAD/main/package.json')
 
 if ( plat.length > 15 ) {
-const infomsg = `🖥️  *CYBER-X 3.0 SYSTEM INFORMATIONS*  🖥️
-
-🤖  *_Bot's System informations_*
-
-1.  _Runtime -: ${runtime(process.uptime())}_
-2.  _Ram Usage -: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB_
-3.  _Bot Version -: 3.0.0 Beta Version_
-
-📶  *_Server System informations_*
-
-1.  _Platform : Heroku_
-2.  _Running OS : ${os.platform()}_
-3.  _CPU Manufacture  -: ${ccp.manufacturer}_
-4.  _CPU Brand -: ${ccp.brand}_
-5.  _CPU Speed -: ${ccp.speed}_
-
-⚙️  *_System Data Collector Engine_*
-
-1. _Engine Version -: ${cinfo}_
-
-💻  *_Running Server's information_*
-
-1. _Server Time Zone -: ${timee.timezone}_
-2. _Time Zone Name -: ${timee.timezoneName}_`
-return await conn.sendMessage(from , { text: infomsg  }, { quoted: mek } )
-
-}
+const infomsg = `🖥️ *SYSTEM INFORMATIONS* 🖥️
 
 
-const infomsg = `🖥️  *CYBER-X 3.0 SYSTEM INFORMATIONS*  🖥️
-
-🤖  *_Bot's System informations_*
+🤖  *_Bot System informations_*
 
 1.  _Runtime -: ${runtime(process.uptime())}_
 2.  _Ram Usage -: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB_
 3.  _Bot Version -: 3.0.0 Beta Version_
+
 
 📶  *_Server System informations_*
 
@@ -506,14 +472,35 @@ const infomsg = `🖥️  *CYBER-X 3.0 SYSTEM INFORMATIONS*  🖥️
 4.  _CPU Brand -: ${ccp.brand}_
 5.  _CPU Speed -: ${ccp.speed}_
 
-⚙️  *_System Data Collector Engine_*
 
-1. _Engine Version -: ${cinfo}_
+> ᴘᴏᴡᴇʀᴅ ʙʏ ᴅᴀʀᴋꜱʜᴀᴅᴏᴡ ᴍᴅ
+\n> *ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ* \n\n> *ʙᴜᴛ ᴀʟʟ ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ* 🧑🏻‍💻`
+return await conn.sendMessage(from , { text: infomsg  }, { quoted: mek } )
 
-💻  *_Running Server's information_*
+}
 
-1. _Server Time Zone -: ${timee.timezone}_
-2. _Time Zone Name -: ${timee.timezoneName}_`
+
+const infomsg = `🖥️ *SYSTEM INFORMATIONS* 🖥️
+
+
+🤖  *_Bot System informations_*
+
+1.  _Runtime -: ${runtime(process.uptime())}_
+2.  _Ram Usage -: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB_
+3.  _Bot Version -: 3.0.0 Beta Version_
+
+
+📶  *_Server System informations_*
+
+1.  _Platform : ${plat}_
+2.  _Running OS : ${os.platform()}_
+3.  _CPU Manufacture  -: ${ccp.manufacturer}_
+4.  _CPU Brand -: ${ccp.brand}_
+5.  _CPU Speed -: ${ccp.speed}_
+
+
+> ᴘᴏᴡᴇʀᴅ ʙʏ ᴅᴀʀᴋꜱʜᴀᴅᴏᴡ ᴍᴅ
+\n> *ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ* \n\n> *ʙᴜᴛ ᴀʟʟ ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ* 🧑🏻‍💻`
  await conn.sendMessage(from , { text: infomsg  }, { quoted: mek } )
 
 
@@ -524,7 +511,7 @@ cmd({
     pattern: "setupimage",
     react: "⚙",
     alias: ["setimg"],
-    desc: "Cyber-X Database Tools",
+    desc: "Dark Shadow Database Tools",
     category: "main",
     use: '.setup ALIVE_MESSAGE=Hi',
     dontAddCommandList : true ,
@@ -563,9 +550,9 @@ cmd({
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 var inital = new Date().getTime();
-let ping = await conn.sendMessage(from , { text: '*Pinging the System...* ❗'  } )
+let ping = await conn.sendMessage(from , { text: '> *Pinging the System... ᯤ↻* \n> *ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ* \n\n> *ʙᴜᴛ ᴀʟʟ ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ* 🧑🏻‍💻'  } )
 var final = new Date().getTime();
-return await conn.sendMessage(from, { text : '💡 *Pong ' + (final - inital) + ' Ms* '  })
+return await conn.sendMessage(from, { text : '> 「✔ Pong」 ' + (final - inital) + ' Ms* \n> *This is Direct Link Downloader Whatsapp Bot*'  })
 } catch (e) {
 reply('*Error !!*')
 l(e)
@@ -576,7 +563,7 @@ cmd({
     pattern: "device",
     react: "ℹ️",
     alias: ["getdevice"],
-    desc: "Cyber-X User Checking Tool",
+    desc: "Dark Shadow User Checking Tool",
     category: "main",
     use: '.device',
     filename: __filename
@@ -612,7 +599,7 @@ if (m.quoted.id.startsWith("3A")) {
   } else if (m.quoted.id.startsWith("CYBER2")) {
   var ss= '```'
  conn.sendMessage(from, { 
-      text : `@${m.quoted.sender.split('@')[0]}  *Is Using:* ${ss}Web WhatsApp(Cyber-X-Wa-Bot)${ss}`, 
+      text : `@${m.quoted.sender.split('@')[0]}  *Is Using:* ${ss}Web WhatsApp(Dark Shadow-Wa-Bot)${ss}`, 
       mentions : [m.quoted.sender]
     });
 } else if (m.quoted.id.startsWith("ZEROTWO")) {
@@ -644,7 +631,7 @@ cmd({
     pattern: "id",
     react: "📚",
     alias: ["getdeviceid"],
-    desc: "Cyber-X User Checking Tool",
+    desc: "Dark Shadow User Checking Tool",
     category: "main",
     use: '.id',
     filename: __filename
@@ -680,20 +667,19 @@ try{
  const vcard = `BEGIN:VCARD\n` // metadata of the contact card
             + `VERSION:3.0\n`
             + `FN:${data}\n` // full name
-            + `ORG:CYBER-X GANG 2023;\n`// the organization of the contact
+            + `ORG:DARK SHADOW;\n`// the organization of the contact
             + `TEL;type=CELL;type=VOICE;waid=${puka}:+${puka}\n`// WhatsApp ID + phone number
             + `END:VCARD`
 await conn.sendMessage(from,{ contacts: { displayName: data ,contacts: [{ vcard }] }},{quoted:mek })
 } catch (e) {
-await conn.sendMessage(from,{text: "*❗ No Added Data in Database*\n\n_Please Do this to Use Your Number for this Vcard_\n\n1. ```.apply OWNER_NUMBER=YOUR NUMBER```\n2. ```.apply OWNER_NAME=YOUR NAME```\n\nᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ  ᴏꜰꜰɪᴄɪᴀʟ\nᴄʏʙᴇʀ-x ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ - ɪɪ" },{quoted:mek })
+await conn.sendMessage(from,{text: "*❗ No Added Data in Database*\n\n_Please Do this to Use Your Number for this Vcard_\n\n1. ```.apply OWNER_NUMBER=YOUR NUMBER```\n2. ```.apply OWNER_NAME=YOUR NAME```\n\nᴅᴀʀᴋꜱʜᴀᴅᴏᴡxᴛᴇᴀᴍ  ᴏꜰꜰɪᴄɪᴀʟ\nᴄʏʙᴇʀ-x ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ - ɪɪ" },{quoted:mek })
 const vcard = `BEGIN:VCARD\n` // metadata of the contact card
             + `VERSION:3.0\n`
-            + `FN:CYBER-X USER\n` // full name
-            + `ORG:CYBER-X GANG 2023;\n`// the organization of the contact
-            + `TEL;type=CELL;type=VOICE;waid=94711421243:+94711421243\n`// WhatsApp ID + phone number
+            + `FN:DARK SHADOW USER\n` // full name
+            + `ORG:DARK SHADOW;\n`// the organization of the contact
+            + `TEL;type=CELL;type=VOICE;waid=94740952096:+94740952096\n`// WhatsApp ID + phone number
             + `END:VCARD`
-await conn.sendMessage(from,{ contacts: { displayName: "CYBER-X USER" ,contacts: [{ vcard }] }},{quoted:mek })
+await conn.sendMessage(from,{ contacts: { displayName: "DARK SHADOW USER" ,contacts: [{ vcard }] }},{quoted:mek })
 
 }
 })
-
