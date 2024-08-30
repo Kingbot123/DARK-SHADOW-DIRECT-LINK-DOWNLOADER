@@ -247,8 +247,8 @@ description : "For customizable jid sender",
 id: prefix + `adddata video`
 },
 {
-title : "----🍑පුකද බලන්නෙ🍑----",
-description : "---👙කෝ නෑනෙ👙---",
+title : "---------------------------------------------",
+description : "-----------------------------------------------",
 id: prefix + `pakaya`
 },
 {
