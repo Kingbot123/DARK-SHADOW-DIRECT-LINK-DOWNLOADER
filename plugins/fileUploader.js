@@ -24,7 +24,7 @@ try {
 
 		let rows = [
 {
-    title : "SAVE AS JID COMMANDS",
+    title : "😋පිළිවෙලකට save කරපන් http😋",
     description : "පිළිවෙලකට save කරපන් http",
     id: prefix  + `menu`
 },
