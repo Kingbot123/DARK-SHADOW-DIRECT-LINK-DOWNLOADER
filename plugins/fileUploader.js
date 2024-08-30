@@ -24,34 +24,28 @@ try {
 
 		let rows = [
 {
-
-title : "SAVE AS JID COMMANDS",
-description : "කෙලෝගන්නෙ නැතුව පිළිවෙලකට save කරපන්",
-id: prefix  + `menu`
-},
-{
-title : "🥷🏻SAVE AS JID ADDRESS NUMBER 01🥷🏻",
-description : "🥷🏻For customizable jid sender🥷🏻",
+title : "SAVE AS JID ADDRESS NUMBER 01",
+description : "For customizable jid sender",
 id: prefix + `setimg JID_NUMBER_ONE=${from}`
 },
 {
-title : "🥷🏻SAVE AS JID ADDRESS NUMBER 02🥷🏻",
-description : "🥷🏻For customizable jid sender🥷🏻",
+title : "SAVE AS JID ADDRESS NUMBER 02",
+description : "For customizable jid sender",
 id: prefix + `setimg JID_NUMBER_TWO=${from}`
 },
 {
-title : "🥷🏻SAVE AS JID ADDRESS NUMBER 03🥷🏻",
-description : "🥷🏻For customizable jid sender🥷🏻",
+title : "SAVE AS JID ADDRESS NUMBER 03",
+description : "For customizable jid sender",
 id: prefix + `setimg JID_NUMBER_THREE=${from}`
 },
 {
-title : "🥷🏻SAVE AS JID ADDRESS NUMBER 04🥷🏻",
-description : "🥷🏻For customizable jid sender🥷🏻",
+title : "SAVE AS JID ADDRESS NUMBER 04",
+description : "For customizable jid sender",
 id: prefix + `setimg JID_NUMBER_FOUR=${from}`
 },
 {
-title : "🥷🏻SAVE AS JID ADDRESS NUMBER 05🥷🏻",
-description : "🥷🏻For customizable jid sender🥷🏻",
+title : "SAVE AS JID ADDRESS NUMBER 05",
+description : "For customizable jid sender",
 id: prefix + `setimg JID_NUMBER_FIVE=${from}`
 }
 
@@ -72,7 +66,7 @@ id: prefix + `setimg JID_NUMBER_FIVE=${from}`
 	   let opts = {
                 image: 'https://i.ibb.co/TMM8yns/20240819-150339.jpg',
                 header: '',
-                footer: `> *ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ 🥷* \n\n> *Cₒₙₜₐcₜ Cₒᵣdₑd:= https://wa.me/94740952096*\n\n> *ʙᴜᴛ ᴀʟʟ ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ* 🧑🏻‍💻`,
+                footer: `> *ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ 🥷* \n\n> *ʙᴜᴛ ᴀʟʟ ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ* 🧑🏻‍💻`,
                 body: msgg
 
             }
@@ -109,17 +103,17 @@ await db_pool.insert( sender + "NAME" , datas )
 let rows = [
 {
 title : "FILE TYPE | AUDIO MP3 🎧",
-description : "🥷🏻For customizable jid sender🥷🏻",
+description : "For customizable jid sender",
 id: prefix + `adddata audio`
 },
 {
 title : "FILE TYPE | VIDEO MP4 📽",
-description : "🥷🏻For customizable jid sender🥷🏻",
+description : "For customizable jid sender",
 id: prefix + `adddata video`
 },
 {
 title : "DONE | SEND IT 🏹",
-description : "🥷🏻For customizable jid sender🥷🏻",
+description : "For customizable jid sender",
 id: prefix + `sendfromfile`
 },
 ]
@@ -208,7 +202,7 @@ const dl_name = await db_pool.get(sender+"NAME")
 const dl_mime = await db_pool.get(sender+"MIME")
 const dl_type = await db_pool.get(sender+"TYPE")
 await conn.sendMessage(from , { text: '*Buffering your file...Please wait...*' }, { quoted: mek } )
- await conn.sendMessage(from, { document : { url :  dl_link },caption: `\n${dl_name}\n\n> *DARK SHADOW MD* \n\n> *Cₒₙₜₐcₜ Cₒᵣdₑd:- https://wa.me/94740952096*`  ,mimetype: dl_mime , fileName: `🎬 DARK SHADOW | ${dl_name}.${dl_type}` } )
+ await conn.sendMessage(from, { document : { url :  dl_link },caption: `\n${dl_name}\n\n> *DARK SHADOW MD*`  ,mimetype: dl_mime , fileName: `🎬 DARK SHADOW | ${dl_name}.${dl_type}` } )
 		} catch (e) {
 reply('❗ Error' + e )
 l(e)
@@ -243,44 +237,44 @@ description : "-----------------------------------------------",
 id: prefix + `pakaya`
 },
 {
-title : "🔮FILE TYPE | AUDIO MP3🔮",
-description : "🔮For customizable jid sender🔮",
-id: prefix + `🔮adddata audio🔮`
+title : "FILE TYPE | AUDIO MP3",
+description : "For customizable jid sender",
+id: prefix + `adddata audio`
 },
 {
-title : "🔮FILE TYPE | VIDEO MP4🔮",
-description : "🔮For customizable jid sender🔮",
-id: prefix + `🔮adddata video🔮`
+title : "FILE TYPE | VIDEO MP4",
+description : "For customizable jid sender",
+id: prefix + `adddata video`
 },
 {
-title : "-----🍑පුකද බලන්නෙ🍑-------",
-description : "-----🍑කෝ නෑනෙ🍑-------",
+title : "---------------------------------------------",
+description : "-----------------------------------------------",
 id: prefix + `pakaya`
 },
 {
-title : "🥷🏻SEND FILE | JID 01🥷🏻",
-description : "🥷🏻Send this file for jid number 01🥷🏻",
-id: prefix +  `🥷🏻sendjidfile JID_NUMBER_ONE🥷🏻`
+title : "SEND FILE | JID 01",
+description : "Send this file for jid number 01",
+id: prefix +  `sendjidfile JID_NUMBER_ONE`
 },
 {
-title : "🥷🏻SEND FILE | JID 02🥷🏻",
-description : "🥷🏻Send this file for jid number 02🥷🏻",
-id: prefix +  `🥷🏻sendjidfile JID_NUMBER_TWO🥷🏻`
+title : "SEND FILE | JID 02",
+description : "Send this file for jid number 02",
+id: prefix +  `sendjidfile JID_NUMBER_TWO`
 },
 {
-title : "🥷🏻SEND FILE | JID 03🥷🏻",
-description : "🥷🏻Send this file for jid number 03🥷🏻",
-id: prefix +  `🥷🏻sendjidfile JID_NUMBER_THREE🥷🏻`
+title : "SEND FILE | JID 03",
+description : "Send this file for jid number 03",
+id: prefix +  `sendjidfile JID_NUMBER_THREE`
 },
 {
-title : "🥷🏻SEND FILE | JID 04🥷🏻",
-description : "🥷🏻Send this file for jid number 04🥷🏻",
-id: prefix +  `🥷🏻sendjidfile JID_NUMBER_FOUR🥷🏻`
+title : "SEND FILE | JID 04",
+description : "Send this file for jid number 04",
+id: prefix +  `sendjidfile JID_NUMBER_FOUR`
 },
 {
-title : "🥷🏻SEND FILE | JID 05🥷🏻",
-description : "🥷🏻Send this file for jid number 05🥷🏻",
-id: prefix +  `🥷🏻sendjidfile JID_NUMBER_FIVE🥷🏻`
+title : "SEND FILE | JID 05",
+description : "Send this file for jid number 05",
+id: prefix +  `sendjidfile JID_NUMBER_FIVE`
 }
 ]
 
@@ -347,8 +341,3 @@ reply('❗ Error' + e )
 l(e)
 }
 })
-
-
-
-
-
