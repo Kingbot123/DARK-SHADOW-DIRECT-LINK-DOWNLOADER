@@ -24,6 +24,12 @@ try {
 
 		let rows = [
 {
+    title : "SAVE AS JID COMMANDS",
+    description : "පිළිවෙලකට save කරපන් http",
+    id: prefix  + `menu`
+},
+
+{
 title : "SAVE AS JID ADDRESS NUMBER 01",
 description : "For customizable jid sender",
 id: prefix + `setimg JID_NUMBER_ONE=${from}`
@@ -202,7 +208,7 @@ const dl_name = await db_pool.get(sender+"NAME")
 const dl_mime = await db_pool.get(sender+"MIME")
 const dl_type = await db_pool.get(sender+"TYPE")
 await conn.sendMessage(from , { text: '*Buffering your file...Please wait...*' }, { quoted: mek } )
- await conn.sendMessage(from, { document : { url :  dl_link },caption: `\n${dl_name}\n\n> *DARK SHADOW MD*`  ,mimetype: dl_mime , fileName: `🎬 DARK SHADOW | ${dl_name}.${dl_type}` } )
+ await conn.sendMessage(from, { document : { url :  dl_link },caption: `\n${dl_name}\n\n> *DARK SHADOW MD*\n> *Cₒₙₜₐcₜ Cₒᵣdₑd:- https://wa.me/94740952096*`  ,mimetype: dl_mime , fileName: `🎬 DARK SHADOW | ${dl_name}.${dl_type}` } )
 		} catch (e) {
 reply('❗ Error' + e )
 l(e)
@@ -232,8 +238,8 @@ await db_pool.insert( sender + "FILE" , data )
 await db_pool.insert( sender + "NAME" , datas )  
 let rows = [
 {
-title : "---------------------------------------------",
-description : "-----------------------------------------------",
+title : "----🍑හරියට බලලා යවපන් http🍑----",
+description : "---👙උබ පොරද👙---",
 id: prefix + `pakaya`
 },
 {
