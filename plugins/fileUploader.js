@@ -66,7 +66,7 @@ id: prefix + `setimg JID_NUMBER_FIVE=${from}`
 	   let opts = {
                 image: 'https://i.ibb.co/TMM8yns/20240819-150339.jpg',
                 header: '',
-                footer: `> *ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ 🥷* \n\n> *ʙᴜᴛ ᴀʟʟ ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ* 🧑🏻‍💻`,
+                footer: `> *ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ 🥷* \n\n> *Cₒₙₜₐcₜ Cₒᵣdₑd:= https://wa.me/94740952096*\n\n> *ʙᴜᴛ ᴀʟʟ ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ* 🧑🏻‍💻`,
                 body: msgg
 
             }
@@ -202,7 +202,7 @@ const dl_name = await db_pool.get(sender+"NAME")
 const dl_mime = await db_pool.get(sender+"MIME")
 const dl_type = await db_pool.get(sender+"TYPE")
 await conn.sendMessage(from , { text: '*Buffering your file...Please wait...*' }, { quoted: mek } )
- await conn.sendMessage(from, { document : { url :  dl_link },caption: `\n${dl_name}\n\n> *DARK SHADOW MD*`  ,mimetype: dl_mime , fileName: `🎬 DARK SHADOW | ${dl_name}.${dl_type}` } )
+ await conn.sendMessage(from, { document : { url :  dl_link },caption: `\n${dl_name}\n\n> *DARK SHADOW MD* \n\n> *Cₒₙₜₐcₜ Cₒᵣdₑd:- https://wa.me/94740952096*`  ,mimetype: dl_mime , fileName: `🎬 DARK SHADOW | ${dl_name}.${dl_type}` } )
 		} catch (e) {
 reply('❗ Error' + e )
 l(e)
