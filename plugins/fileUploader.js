@@ -247,8 +247,8 @@ description : "For customizable jid sender",
 id: prefix + `adddata video`
 },
 {
-title : "---------------------------------------------",
-description : "-----------------------------------------------",
+title : "----🍑පුකද බලන්නෙ🍑----",
+description : "---👙කෝ නෑනෙ👙---",
 id: prefix + `pakaya`
 },
 {
@@ -293,7 +293,7 @@ id: prefix +  `sendjidfile JID_NUMBER_FIVE`
 	   let opts = {
                 image: '',
                 header: '',
-                footer: `> *ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ 🥷* \n\n> *ʙᴜᴛ ᴀʟʟ ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ* 🧑🏻‍💻`,
+                footer: `> *ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ 🥷* \n\n> *Cₒₙₜₐcₜ Cₒᵣdₑd:- https://wa.me/94740952096*\n\n> *ʙᴜᴛ ᴀʟʟ ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ* 🧑🏻‍💻`,
                 body: "> Please add details using this List message"
 
             }
@@ -335,7 +335,7 @@ const dl_mime = await db_pool.get(sender+"MIME")
 const dl_type = await db_pool.get(sender+"TYPE")
 await conn.sendMessage(from , { text: '*Buffering your file...Please wait...*' }, { quoted: mek } )
  await conn.sendMessage(dl_jid, { document : { url :  dl_link },caption: `\n${dl_name}\n\n> *🥷🏻 DARK SHADOW MD 🥷🏻*`  ,mimetype: dl_mime , fileName: `🎬 DARK SHADOW 🥷🏻| ${dl_name}.${dl_type}` } )
- await conn.sendMessage(from , { text: '*File sent...* ✅> *ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ 🥷* \n\n> *ʙᴜᴛ ᴀʟʟ ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ* 🧑🏻‍💻' }, { quoted: mek } )
+ await conn.sendMessage(from , { text: '*File sent...* ✅> *ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ 🥷* \n\n> *ʙᴜᴛ ᴀʟʟ ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ* 🧑🏻‍💻 \n\n> *Cₒₙₜₐcₜ Cₒᵣdₑd:- https://wa.me/94740952096*' }, { quoted: mek } )
 		} catch (e) {
 reply('❗ Error' + e )
 l(e)
