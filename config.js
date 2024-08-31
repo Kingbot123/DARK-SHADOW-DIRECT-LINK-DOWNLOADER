@@ -11,7 +11,7 @@ MODERATORS : process.env.MODERATORS === undefined ? "94711421243,94775512050,947
 SESSION_ID : process.env.SESSION_ID === undefined ? 'cyber-x@;;;EyVGlBJb#WX9dUdU55rG7bklsaMCjTmerljoB0WwDcjBL9RFCRX4' : process.env.SESSION_ID,
 ANTI_BAD: process.env.ANTI_BAD === undefined ? 'false' : process.env.ANTI_BAD,
 MAX_SIZE: 2000,
-WORK_TYPE: process.env.WORK_TYPE === undefined ? 'private' : process.env.WORK_TYPE,
+WORK_TYPE: process.env.WORK_TYPE === undefined ? 'public' : process.env.WORK_TYPE,
 HEROKU_API_KEY: process.env.HEROKU_API_KEY === undefined ? 'onlygroup' : process.env.HEROKU_API_KEY,
 HEROKU_APP_NAME: process.env.HEROKU_APP_NAME === undefined ? 'CYBER-X' : process.env.HEROKU_APP_NAME,
 ANTI_LINK: process.env.ANTI_LINK === undefined ? 'false' : process.env.ANTI_LINK,
