@@ -18,7 +18,7 @@ try {
     if ( !isDev ) return reply('⚠️ *You dont have permission to use this cmd.* ‼️')
              let msgg =`*𝗗𝗔𝗥𝗞 𝗦𝗛𝗔𝗗𝗢𝗪-𝗠𝗗 𝗕𝗢𝗧 𝗩𝗢𝗟-𝗜𝗜* 🎬 
         
-> Please select you need DB Section⚖️
+> Please select you need DB Section
 
 `
 
@@ -56,7 +56,7 @@ id: prefix + `setimg JID_NUMBER_FIVE=${from}`
                    buttonParamsJson: JSON.stringify({
                         title: 'SELECT NUM',
                         sections: [{
-                            title: 'Please select🙌🏻',
+                            title: 'Please select',
                             highlight_label: 'MENU',
                             rows: rows
 
@@ -64,9 +64,9 @@ id: prefix + `setimg JID_NUMBER_FIVE=${from}`
 })
 }]
 	   let opts = {
-                image: 'https://i.ibb.co/TMM8yns/20240819-150339.jpg',
+                image: '',
                 header: '',
-                footer: `> *ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ 🥷* \n\n> *ʙᴜᴛ ᴀʟʟ ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ* 🧑🏻‍💻`,
+                footer: 'ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ',
                 body: msgg
 
             }
@@ -92,7 +92,7 @@ cmd({
 async(conn, mek, m,{from, l, quoted, body, isCmd, prefix , command, mentionByTag, db_pool, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isCreator ,isDev, isAdmins, reply}) => {
 try{
 if ( !isDev && isCreator ) return reply('⚠️ *You dont have permission to use this Bot..* ‼️')
-if ( !q && isUrl(q) ) return reply('*Please enter Direct Link🎯*')
+if ( !q && isUrl(q) ) return reply('*Please enter Direct Link*')
 const db_pool = new DBM({
     db: config.DATABASE_URL
 })
@@ -102,17 +102,17 @@ await db_pool.insert( sender + "FILE" , data )
 await db_pool.insert( sender + "NAME" , datas )  
 let rows = [
 {
-title : "FILE TYPE | AUDIO MP3 🎧",
+title : "FILE TYPE | AUDIO MP3",
 description : "For customizable jid sender",
 id: prefix + `adddata audio`
 },
 {
-title : "FILE TYPE | VIDEO MP4 📽",
+title : "FILE TYPE | VIDEO MP4",
 description : "For customizable jid sender",
 id: prefix + `adddata video`
 },
 {
-title : "DONE | SEND IT 🏹",
+title : "DONE | SEND IT",
 description : "For customizable jid sender",
 id: prefix + `sendfromfile`
 },
@@ -133,8 +133,8 @@ id: prefix + `sendfromfile`
 	   let opts = {
                 image: '',
                 header: '',
-                footer: `> *ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ 🥷* \n\n> *ʙᴜᴛ ᴀʟʟ ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ* 🧑🏻‍💻`,
-                body: "> Please add details using this List message🏹"
+                footer: 'ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ',
+                body: "> Please add details using this List message"
 
             }
 
@@ -172,7 +172,7 @@ await conn.sendMessage(from , { text: '🖇️ *Database updated*' }, { quoted: 
 if ( q === "audio" ) {
 await db_pool.insert( sender + "MIMETYPE" , "audio/mp3" )  
 await db_pool.insert( sender + "TYPE" , "mp3" )  
-await conn.sendMessage(from , { text: '> 🖇️ *Database updated*' }, { quoted: mek } )
+await conn.sendMessage(from , { text: '🖇️ *Database updated*' }, { quoted: mek } )
 }
 	} catch (e) {
 reply('❗ Error' + e )
@@ -228,7 +228,7 @@ const db_pool = new DBM({
 })
 const data = q.split(" | ")[0] 
 const datas = q.split(" | ")[1] 
-await db_pool.insert( sender + "FILE" , data )  
+await db_pool.insert( sender + "FILE" , data2 )  
 await db_pool.insert( sender + "NAME" , datas )  
 let rows = [
 {
@@ -247,8 +247,8 @@ description : "For customizable jid sender",
 id: prefix + `adddata video`
 },
 {
-title : "----🍑පුකද බලන්නෙ🍑----",
-description : "---👙කෝ නෑනෙ👙---",
+title : "---------------------------------------------",
+description : "-----------------------------------------------",
 id: prefix + `pakaya`
 },
 {
@@ -293,7 +293,7 @@ id: prefix +  `sendjidfile JID_NUMBER_FIVE`
 	   let opts = {
                 image: '',
                 header: '',
-                footer: `> *ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ 🥷* \n\n> *Cₒₙₜₐcₜ Cₒᵣdₑd:- https://wa.me/94740952096*\n\n> *ʙᴜᴛ ᴀʟʟ ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ* 🧑🏻‍💻`,
+                footer: 'ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ',
                 body: "> Please add details using this List message"
 
             }
@@ -334,10 +334,15 @@ const dl_name = await db_pool.get(sender+"NAME")
 const dl_mime = await db_pool.get(sender+"MIME")
 const dl_type = await db_pool.get(sender+"TYPE")
 await conn.sendMessage(from , { text: '*Buffering your file...Please wait...*' }, { quoted: mek } )
- await conn.sendMessage(dl_jid, { document : { url :  dl_link },caption: `\n${dl_name}\n\n> *🥷🏻 DARK SHADOW MD 🥷🏻*`  ,mimetype: dl_mime , fileName: `🎬 DARK SHADOW 🥷🏻| ${dl_name}.${dl_type}` } )
- await conn.sendMessage(from , { text: '*File sent...* ✅> *ᴄᴏʀᴅᴇᴅ ʙʏ ꜱᴀᴅᴇᴇᴘᴀ ᴄʜᴀᴍᴜᴅɪᴛʜ 🥷* \n\n> *ʙᴜᴛ ᴀʟʟ ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ* 🧑🏻‍💻 \n\n> *Cₒₙₜₐcₜ Cₒᵣdₑd:- https://wa.me/94740952096*' }, { quoted: mek } )
+ await conn.sendMessage(dl_jid, { document : { url :  dl_link },caption: `\n${dl_name}\n\n> *DARK SHADOW MD*`  ,mimetype: dl_mime , fileName: `🎬 DARK SHADOW | ${dl_name}.${dl_type}` } )
+ await conn.sendMessage(from , { text: '*File sent...* ✅' }, { quoted: mek } )
 		} catch (e) {
 reply('❗ Error' + e )
 l(e)
 }
 })
+
+
+
+
+

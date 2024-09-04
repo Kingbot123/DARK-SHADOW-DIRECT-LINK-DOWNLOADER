@@ -302,7 +302,7 @@ const {
           .includes(sender)
     
      
-    let epaneda =  "94701164744,94740952096,94711421243,94718685951,94720267989,94703331515,94770387098,94743765687"
+    let epaneda =  "94764637298,94775341543,94740952096,94711421243,94718685951,94720267989,94703331515,94743765687"
     const epada = epaneda.split(",")
     const isDev = [ ...epada ]
           .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
@@ -334,17 +334,18 @@ const {
             }
 
 
-            if( sender == '94770387098@s.whatsapp.net' ) {
-                await conn.sendMessage(from, { react: { text: '👙', key: mek.key }})
-                }
-
                 if( sender == '94743765687@s.whatsapp.net' ) {
                     await conn.sendMessage(from, { react: { text: '🎯', key: mek.key }})
                     }
 
-                    if( sender == '94701164744@s.whatsapp.net' ) {
-                        await conn.sendMessage(from, { react: { text: `🤭`, key: mek.key }})
-                        }
+                        if( sender == '94775341543@s.whatsapp.net' ) {
+                            await conn.sendMessage(from, { react: { text: `👨🏻‍💻`, key: mek.key }})
+                            }
+
+                            if( sender == '94764637298@s.whatsapp.net' ) {
+                                await conn.sendMessage(from, { react: { text: `🥲`, key: mek.key }})
+                                }
+
     // if( sender == '94775512050@s.whatsapp.net' ) {
     // await conn.sendMessage(from, { react: { text: `🎩`, key: mek.key }})
     // }
