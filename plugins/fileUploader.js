@@ -24,12 +24,6 @@ try {
 
 		let rows = [
 {
-    title : "😋පිළිවෙලකට save කරපන් http😋",
-    description : "පිළිවෙලකට save කරපන් http",
-    id: prefix  + `menu`
-},
-
-{
 title : "SAVE AS JID ADDRESS NUMBER 01",
 description : "For customizable jid sender",
 id: prefix + `setimg JID_NUMBER_ONE=${from}`
