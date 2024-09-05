@@ -4,7 +4,7 @@ const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, 
 const { DBM } = require('postgres_dbm')
 
 cmd({
-        pattern: "save",
+        pattern: "sv",
         react: "🛠️",
         alias: ["savejid"],
         desc: "Get Bot All Cmd List",
@@ -82,7 +82,7 @@ id: prefix + `setimg JID_NUMBER_FIVE=${from}`
 
 
 cmd({
-    pattern: "uploadfile",
+    pattern: "upfile",
     alias: ["upsendfile"],
     desc: "Direct link file uploader",
     category: "main",
@@ -212,7 +212,7 @@ l(e)
 // JID SENDER WITH BUTTONS
 
 cmd({
-    pattern: "sendfile",
+    pattern: "sdfile",
     alias: ["sendjidfile"],
     desc: "Direct link file uploader",
     category: "main",
