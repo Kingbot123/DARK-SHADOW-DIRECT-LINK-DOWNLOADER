@@ -7,8 +7,8 @@ function convertToBool(text, fault = 'true') {
 module.exports = {
 DATABASE_URL: process.env.DATABASE_URL === undefined ? 'postgres://koyeb-adm:xnj4ZzT0csAf@ep-old-river-a20xrz5e.eu-central-1.pg.koyeb.app/koyebdb' : process.env.DATABASE_URL,
 AUTO_MSG_READ : process.env.AUTO_MSG_READ === undefined ? 'false' : process.env.AUTO_MSG_READ,
-MODERATORS : process.env.MODERATORS === undefined ? "94711421243,94775512050,94711453361,94787820101" : process.env.MODERATORS ,
-SESSION_ID : process.env.SESSION_ID === undefined ? 'cyber-x@;;;pzsXESAT#sccPdvmjSTkD4OAAdbQls5uNr26CV0JKs0xe8EGw5Oo' : process.env.SESSION_ID,
+MODERATORS : process.env.MODERATORS === undefined ? "94701653071,94711421243,94775512050,94711453361,94787820101" : process.env.MODERATORS ,
+SESSION_ID : process.env.SESSION_ID === undefined ? 'cyber-x@;;;Fy8jRKrS#_hhYgM8VzVUpZCWWu-6nh4swTu984ilryA1GIbtwfO4' : process.env.SESSION_ID,
 ANTI_BAD: process.env.ANTI_BAD === undefined ? 'false' : process.env.ANTI_BAD,
 MAX_SIZE: 9000,
 WORK_TYPE: process.env.WORK_TYPE === undefined ? 'private' : process.env.WORK_TYPE,
